@@ -1,6 +1,6 @@
 ﻿namespace Task
 {
-    internal class Car : Vehicle
+    public class Car : Vehicle
     {
         private int _fuelMax = 0;
 

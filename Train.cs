@@ -1,6 +1,6 @@
 ﻿namespace Task
 {
-    internal class Train : Vehicle
+    public class Train : Vehicle
     {
         private int _carriagesCount = 0;
         public int CarriagesCount
@@ -35,6 +35,12 @@
         public Train(Vehicle vehicle, int carriagesCount) : this(vehicle.Name, vehicle.Speed, carriagesCount)
         {
             
+        }
+
+        public override void Show()
+        {
+            base.Show();
+            Console.WriteLine("Кількість вагонів: {0}.", CarriagesCount);
         }
     }
 }

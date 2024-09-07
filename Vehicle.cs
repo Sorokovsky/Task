@@ -1,6 +1,6 @@
 ﻿namespace Task
 {
-    internal class Vehicle
+    public class Vehicle
     {
         private int _speed = 0;
 
