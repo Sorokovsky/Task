@@ -30,6 +30,10 @@
             FuelMax = fuelMax;
         }
 
+        public Car(Vehicle vehicle, string mark, int fuelMax) : this(vehicle.Name, vehicle.Speed, mark, fuelMax)
+        {
+        }
+
         public Car() : base()
         {
             
