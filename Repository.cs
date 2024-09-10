@@ -6,7 +6,7 @@ namespace Task
 
         public void Append(T item) 
         {
-            _list.Append(item);
+            _list.AddLast(item);
         }
 
         public IEnumerable<T> GetByName(string name)
@@ -20,6 +20,7 @@ namespace Task
             foreach(T item in selected)
             {
                 _list.Remove(item);
+                break;
             }
         }
 
